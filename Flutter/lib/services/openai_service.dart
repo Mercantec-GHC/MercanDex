@@ -114,7 +114,7 @@ class OpenAIService {
   }
 
   static Future<void> savePokedexEntry(Map<String, dynamic> entry, File image) async {
-    final uri = Uri.parse('https://h4-jwt.onrender.com/api/Pokedex');
+    final uri = Uri.parse('https://dexb.mercantec.tech/api/Pokedex');
 
     try {
       final request = http.MultipartRequest('POST', uri)
@@ -136,15 +136,15 @@ class OpenAIService {
         await response.stream.bytesToString();
       } else {
         await response.stream.bytesToString();
-        throw Exception('Failed to save Pokémon entry: ${response.statusCode}');
+        throw Exception('Failed to save MercanMon entry: ${response.statusCode}');
       }
     } catch (e) {
-      throw Exception('Exception occurred while saving Pokémon entry: $e');
+      throw Exception('Exception occurred while saving MercanMon entry: $e');
     }
   }
 
   static Future<List<Map<String, dynamic>>> fetchPokedexEntries() async {
-    final uri = Uri.parse('https://h4-jwt.onrender.com/api/Pokedex');
+    final uri = Uri.parse('https://dexb.mercantec.tech/api/Pokedex');
 
     final response = await http.get(uri);
 
@@ -152,7 +152,7 @@ class OpenAIService {
       final List<dynamic> data = jsonDecode(response.body);
       return data.cast<Map<String, dynamic>>();
     } else {
-      throw Exception('Failed to fetch Pokémon entries: ${response.statusCode}');
+      throw Exception('Failed to fetch MercanMon entries: ${response.statusCode}');
     }
   }
 }
