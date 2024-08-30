@@ -6,7 +6,7 @@ Mercandex er en AI-drevet applikation, der gør det muligt for brugere at skabe 
 
 Vi anbefaler at bruge den indbyggede wiki til jeres dokumentation, som vi har gjort her - [MercanDex Wiki](https://github.com/Mercantec-GHC/MercanDex/wiki)
 
-# Video af MercanDex
+## Video af MercanDex
 
 https://github.com/user-attachments/assets/6ebfbf95-e4a8-45e2-8af1-77416cc76d90
 
