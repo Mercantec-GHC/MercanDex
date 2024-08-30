@@ -1,4 +1,4 @@
-# MercanDex
+# <img src="https://github.com/Mercantec-GHC/Assets/blob/main/MercanDex/Logo.png" alt="MercanDex Logo" style="width: 30px; vertical-align: middle;">  MercanDex
 Mercandex er en AI-drevet applikation, der gør det muligt for brugere at skabe deres egne unikke væsner ved hjælp af ChatGPT API'en
 
 
